@@ -1,38 +1,33 @@
-Sure! Below is the full code for a personal portfolio website, including HTML, CSS, and JavaScript. This code will create a responsive and stylish portfolio with sections like Home, About, Services, Skills, Teams, Contact, and Footer.
-
-
----
-
-1. HTML (index.html)
-
-This is the main structure of the portfolio.
-
 <!DOCTYPE html>
+<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
-
-    <!-- Scroll Up Button -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">My<span>Portfolio</span></a></div>
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#Resume" class="menu-btn">Resume</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -40,73 +35,83 @@ This is the main structure of the portfolio.
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, My Name is</div>
-                <div class="text-2">Your Name</div>
-                <div class="text-3">And I'm a <span>Web Developer</span></div>
-                <a href="#contact">Hire Me</a>
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Peta Gnaneshwar Reddy</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="">Hire me </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
+            <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="profile.jpg" alt="">
+                    <img src="WhatsApp_Image_2024-10-29_at_16.10.03_dbce3ec9-removebg-preview.png" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm [Your Name] and I'm a <span>Web Developer</span></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                    <a href="#">Download CV</a>
+                    <div class="text">I'm Peta Gnaneshwar Reddy and I'm a <span class="typing-2"></span></div>
+                    <p>I'm a dedicated Java full stack and front-end developer with a strong command of backend development in Java and a deep understanding of front-end frameworks. My goal is to craft applications that are both high-performing and user-friendly, delivering seamless experiences across all devices. I’m passionate about building efficient, scalable solutions and constantly exploring new technologies to enhance my skill set. Whether working independently or as part of a team, I bring creativity and precision to every project.</p>
+                    
+                     <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1tNWpNCeDWl9yhxCf5HIohsLQjspn_EEG/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Varad's resume in a new tab" href="https://drive.google.com/file/d/1tNWpNCeDWl9yhxCf5HIohsLQjspn_EEG/view?usp=sharing" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My Services</h2>
+            <h2 class="title">My services</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Web Development</div>
-                        <p>Creating modern and responsive websites.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">Graphic Design</div>
-                        <p>Professional designs for your brand.</p>
+                        <div class="text">Web Design</div>
+                        <p>Developed responsive web applications across diverse industries, focusing on delivering seamless user experiences and functional, scalable solutions.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">SEO Optimization</div>
-                        <p>Improve search rankings with SEO techniques.</p>
+                        <div class="text">Java Full Stack</div>
+                        <p>Developed robust Java full-stack applications across diverse industries, creating scalable backend systems and intuitive, responsive front-end interfaces</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Designed engaging, user-centric applications tailored for diverse industries, focusing on intuitive navigation and responsive interfaces. across sectors</p>
+                    </div>
+                </div>
+               </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My Skills</h2>
+            <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <p>I specialize in HTML, CSS, JavaScript, and backend technologies to build scalable web applications.</p>
-                    <a href="#">Read More</a>
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>With a strong foundation as a Java full stack and front-end developer, I bring creativity and technical expertise to every project. My experience spans web and app design across various industries, including food delivery services and beyond. I focus on crafting visually appealing and highly functional user experiences, blending design aesthetics with reliable backend structures. My skill set includes responsive UI/UX design, efficient backend development in Java, and seamless full-stack integration to deliver projects that are both impactful and innovative.</p>
+                    <a href="#">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -119,87 +124,108 @@ This is the main structure of the portfolio.
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>80%</span>
+                            <span>60%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>75%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line mysql"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+
+
+    <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact Me</h2>
+            <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <p>Feel free to reach out to me for any queries or collaborations.</p>
+                    <div class="text">Get in Touch</div>
+                    <p>I'm always open to discussing new projects, creative ideas, or collaboration opportunities. Whether you have a question or just want to connect, feel free to reach out. Let’s create something great together!</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
                                 <div class="head">Name</div>
-                                <div class="sub-title">Your Name</div>
+                                <div class="sub-title">Peta Gnaneshwar Reddy</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Ananthapur,Andhra Pradesh || 515004
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">your@email.com</div>
+                                <div class="sub-title">petagnaneshwarreddy@gmail.com</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit">Send Message</button>
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+      <!--Visitor Thank You-->
+<section class="Thank You" id="Thank You">
+    <div class="max-width ">
+        <h2 class="title">Thank You For Visiting My Portfolio</h2>
+    </section>
 
-    <!-- Footer -->
+    <!-- footer section start -->
     <footer>
-        <span>© 2024 Your Name | All Rights Reserved</span>
+        <span>Created By <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
     </footer>
 
     <script src="script.js"></script>
+  
 </body>
 </html>
-
-
----
-
-2. CSS (style.css)
-
-This file contains all the styling.
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f5f5f5;
-}
-
-/* Add styles
-
