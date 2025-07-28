@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -59,10 +59,10 @@
                     <div class="text">I'm Peta Gnaneshwar Reddy and I'm a <span class="typing-2"></span></div>
                     <p>I'm a dedicated Java full stack and front-end developer with a strong command of backend development in Java and a deep understanding of front-end frameworks. My goal is to craft applications that are both high-performing and user-friendly, delivering seamless experiences across all devices. I’m passionate about building efficient, scalable solutions and constantly exploring new technologies to enhance my skill set. Whether working independently or as part of a team, I bring creativity and precision to every project.</p>
                     
-                     <!-- <a aria-label="Open Varad's resume in a new tab" href="#peta_resume_" target="_blank"
+                     <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1tNWpNCeDWl9yhxCf5HIohsLQjspn_EEG/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Varad's resume in a new tab" href="https://drive.google.com/file/d/1tNWpNCeDWl9yhxCf5HIohsLQjspn_EEG/view?usp=sharing" target="_blank"
+        <a aria-label="Open Varad's resume in a new tab" href="https://drive.google.com/file/d/1IVjDtKKYTxnl4pOQ0mS4Kdf4FS5BbIHU/view?usp=sharing" target="_blank"
         class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
     </ul>
@@ -189,31 +189,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+              <form id="contact-form">
+  <div class="fields">
+    <div class="field name">
+      <input type="text" id="name" placeholder="Name" required />
+    </div>
+    <div class="field email">
+      <input type="email" id="email" placeholder="Email" required />
+    </div>
+  </div>
+  <div class="field">
+    <input type="text" id="subject" placeholder="Subject" required />
+  </div>
+  <div class="field textarea">
+    <textarea id="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+  </div>
+  <div class="button-area">
+    <button type="submit">Send message</button>
+  </div>
+</form>
+
       <!--Visitor Thank You-->
 <section class="Thank You" id="Thank You">
     <div class="max-width ">
@@ -221,7 +216,9 @@
     </section>
 
     <!-- footer section start -->
-   
+    <footer>
+        <span>Created By <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
 
     <script src="script.js"></script>
   
